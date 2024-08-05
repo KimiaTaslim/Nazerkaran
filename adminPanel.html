@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+        <!-- css -->
+    <link rel="stylesheet" href="assets/css/adminPanel.css" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <section id="dashboard">
+            <h1>Dashboard</h1>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Visits Today</h3>
+                    <p id="visitsToday">824</p>
+                </div>
+                <div class="card">
+                    <h3>Popularity Rate</h3>
+                    <p id="popularityRate">87%</p>
+                </div>
+                <div class="card">
+                    <h3>Monthly Income</h3>
+                    <p id="monthlyIncome">$12,841</p>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart" id="visitChart">
+                    <h3>Visits Over Time</h3>
+                    <!-- Chart placeholder -->
+                </div>
+                <div class="chart" id="incomeChart">
+                    <h3>Income Over Time</h3>
+                    <!-- Chart placeholder -->
+                </div>
+            </div>
+        </section>
+
+        <section id="users">
+            <h1>Manage Users</h1>
+            <table id="userTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+                <!-- User rows will be added here dynamically -->
+            </table>
+            <button onclick="addUser()">Add User</button>
+        </section>
+
+        <section id="content">
+            <h1>Manage Content</h1>
+            <p>Content management functionalities here.</p>
+        </section>
+
+        <section id="analytics">
+            <h1>Analytics</h1>
+            <p>Analytics and reporting functionalities here.</p>
+        </section>
+
+        <section id="settings">
+            <h1>Settings</h1>
+            <p>Settings functionalities here.</p>
+        </section>
+    </div>
+
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="adminScripts.js"></script>
+</body>
+</html>

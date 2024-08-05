@@ -1,0 +1,175 @@
+/* Style for About Us page */
+.container-a {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-us {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1, .about-us h2 {
+    color: #203755;
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    margin-top: 1rem;
+}
+
+.about-us h1::after, .about-us h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #203755;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+.about-us p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    padding: 1rem 2rem;
+}
+
+.intro, .history, .mission, .values, .team {
+    margin-bottom: 3rem;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro .content {
+    flex: 1 1 50%;
+}
+
+.intro .image {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.intro .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2rem 0;
+}
+
+.values-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.value-item {
+    text-align: center;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value-item i {
+    font-size: 2rem;
+    color: #203755;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.team-member {
+    text-align: center;
+    margin: 1rem;
+    flex: 1 1 30%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member img {
+    max-width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin-top: 1rem;
+    color: #203755;
+}
+
+.team-member p {
+    color: #666;
+}
+
+
+.organizational-chart {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.chart-box {
+    background-color: #fff;
+    border: 2px solid #203755;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 100px;
+}
+
+
+@media only screen and (min-width: 329px) and (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+    .intro .content, .intro .image {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    .values-list, .team-list {
+        flex-direction: column;
+    }
+    .value-item, .team-member {
+        margin: 1rem 0;
+    }
+    .chart-row {
+        flex-direction: column;
+    }
+    .chart-box {
+        min-width: auto;
+    }
+}

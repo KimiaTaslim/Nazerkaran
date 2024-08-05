@@ -1,0 +1,182 @@
+.services-header{
+    background-image: linear-gradient(to top, rgb(4 3 13 / 53%), rgba(0, 0, 0, 1)), url(../../images/pictures/asia-businessmen-businesswomen-meeting-brainstorming-ideas-conducting-business-presentation-project-colleagues-working-together-plan-success-strategy-enjoy-teamwork-small-modern-night-office.jpg);
+    width: 100%;
+    height: 8rem;
+    background-size: 80rem 30rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.services-header > h1{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+/* Section overview styles */
+
+.container-o {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-overview {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.section-overview p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.services-list li:hover {
+    transform: scale(1.05);
+    background-color: #4164a2;
+    color: white;
+}
+
+/* style for differentiators clients */
+
+.container-d {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-d > h2 {
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container-d > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.differentiators-list li, .clients-list li {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.differentiators-list li:hover, .clients-list li:hover {
+    transform: scale(1.05);
+    background-color: #4164a2;
+    color: white;
+    cursor: default;
+}
+
+.clients-list li {
+    margin-top: 20px;
+}
+
+/* Styles for activity scope section */
+
+.container-s {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.activity-scope h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.accordion-title {
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-title:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-title::after {
+    content: '\f107';
+    /* font-size: 1rem;
+    transition: transform 0.3s ease; */
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-title::after {
+    transform: rotate(-180deg);
+}
+
+[lang=fa-IR] .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0rem 1rem 0rem 0rem;
+}
+
+[lang=en] .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+.accordion-content > ul{
+    line-height: 2.5rem;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 100%; /* Should be large enough to show content */
+    transition: max-height 0.3s ease-in, padding 0.3s ease-in;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+

@@ -1,0 +1,373 @@
+/* set font */
+@font-face {
+    font-family: 'Vazir Medium'; /* Choose a descriptive name for your font */
+    src: url('../../fonts/Vazir-Medium-FD.woff') format('woff'); /* Specify the font file path and format */
+    font-weight: Medium; /* Optional: specify font weight (e.g., bold) */
+    font-style: normal; /* Optional: specify font style (e.g., italic) */
+  }
+
+  [dir=ltr] body {
+    font-family:sans-serif;
+  }
+  
+ 
+  [dir=rtl] body {
+    font-family: 'Vazir Medium';
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* CUSTOM STYLE  */
+
+.p-r-15{
+    padding-right: 15px;
+}
+
+.lang-underline{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    border-bottom-width: medium;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+  
+}
+::-webkit-scrollbar-thumb{
+    background-color: #352968af ;
+}
+
+
+/* animation */
+.hero-title > h1{
+    font-weight: bold;
+}
+
+.fade-in-left{
+    animation:fade-in-left 2s cubic-bezier(.39,.575,.565,1.000) both
+}
+
+.fade-in-left-p{
+    animation: fade-in-left 5s ease-in-out both;
+}
+
+@keyframes fade-in-left{
+    0%{
+      transform:translateX(-50px);
+      opacity:0
+    }
+    100%{
+      transform:translateX(0);
+      opacity:1
+    }
+}
+
+/* NAVBAR STYLE  */
+nav{
+    /* background-color: #0c2135de; */
+    background-image: linear-gradient(to right, #0c2135, #172d46, #203755, #2f456a, #3a5079);
+    height: 80px;
+    width: 100%; 
+    display: flex;
+    z-index: 10;
+}
+
+.Name{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 40px;
+    font-weight: 400;
+    width: 30%;
+    cursor: default;
+    font-weight: bold;
+}
+
+.links {
+    width: 40%;
+}
+
+.links ul{
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 2px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.language{
+    width: 30%;  
+}
+
+.language > ul > li{
+    transition: font-size 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+.language > ul > li:hover{
+    font-size: 15px;
+}
+
+[lang=fa-IR] .language ul{
+    float: left; 
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+[lang=en] .language ul{
+    font-size: 13px;
+    float: right; 
+    margin-right: 30px;
+}
+
+#f-ul > li > a{
+    transition: font-size 0.2s ease-in-out;
+}
+
+#f-ul > li > a:hover{
+    font-size: 20px;
+}
+
+/* SMALL MENU STYLE */
+[lang=fa-IR] #bars {
+    padding: 0% 3%;
+    color: #fbfbfb;
+    align-self: center;
+    height: 10%;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 0rem;
+}
+
+[lang=en] #bars {
+    padding: 0% 3%;
+    color: #fbfbfb;
+    align-self: center;
+    height: 10%;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0rem;
+}
+
+
+.clicked{
+    display: flex;
+    flex-direction: column;
+}
+
+.ulStyle{
+    width: 100%;
+    background: #2b3e4fe0;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    backdrop-filter: blur(8px);
+}
+
+.langStyle{
+    font-size: 13px;
+    width: 100%;
+    background: #2b3e4fa3;
+    position: absolute;
+    top: 25rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(25px);
+}
+
+/* STYLE FOR FOOTER  */
+footer{
+    background-image: linear-gradient(to right bottom, #0c2135, #223958, #3c527c, #5b6ca2, #7e86c9);  
+    color: white;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-top{
+    padding-top: 1rem;
+}
+
+.slogan > h3{
+    font-size: 1.3rem;
+    color: #6a89b7;
+}
+
+.footer-elements{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.footer-elements , .footer-top {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer-middle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.footer-middle > div{
+    width: 25%;
+    text-align: justify;
+}
+
+.footer-middle > div p{
+    padding-top: 1rem;
+}
+
+.contact > div > h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact > div{
+    padding-bottom: 1rem;
+}
+
+.footer-middle > div > h4 , .ertebat h4 , .map-footer > h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.links-footer > ul{
+    padding: 0;
+}
+
+.links-footer > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.ertebat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ertebat > div{
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.footer-end{
+    width: 25%;
+}
+
+.google-map{
+    padding-top: 1rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 329px) and (max-width: 768px){
+    .top {
+        background-image: linear-gradient(to right bottom, #0c2135, #223958, #3c527c, #5b6ca2, #7e86c9);
+        height: auto;
+    }
+    
+    .slogan > h3 {
+    font-size: 1rem;
+    color: #6a89b7;
+    }
+
+    .footer-elements {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+
+    .footer-middle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    }
+
+    .footer-middle > div {
+    width: 100%;
+    text-align: justify;
+    }
+
+    .neshani > p{
+        line-height: 2rem;
+    }
+
+    .ertebat {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 1rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .ertebat > div {
+        padding-right: 0rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer-middle > div > h4, .ertebat h4, .map-footer > h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    .footer-middle > div p {
+        padding-top: 0rem;
+    }
+
+    .footer-end {
+        width: 100%;
+        padding-top: 2rem;
+    }
+    
+    .map-footer > h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+}

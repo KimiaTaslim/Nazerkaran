@@ -1,0 +1,302 @@
+/* HEADER STYLE */
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* HERO SECTION */
+
+.parallax-hero{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 1) 100%), url(../../images/pictures/1.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-title , .hero-p{
+    padding-top: 5rem;
+    padding-right: 2rem;
+    color: #ffffffdb;
+}
+
+.hero-title{
+    font-size: 35px;
+}
+
+.hero-p{
+    font-size: 20px;
+    width: 60%;
+    text-align: justify;
+    padding-bottom: 5.5rem;
+}
+
+/* HEADER END */
+
+/* ********************************************* */
+
+/* MAIN STYLE */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.about-section {
+    padding-top: 5rem;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 1) 100%), url(../../images/pictures/گواهی.jpg);
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* این خط overlay تیره را ایجاد می‌کند */
+    pointer-events: none; /* این خط برای جلوگیری از تأثیر بر روی عناصر قابل کلیک زیرین است */
+}
+
+div.container{
+    width: 50%;
+    /* z-index: 100; */
+    position: inherit;
+}
+
+.section-title{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.1); /* رنگ سفید با شفافیت */
+    border-radius: 15px; /* گرد کردن گوشه‌ها */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* سایه برای عمق بیشتر */
+    backdrop-filter: blur(10px); /* بلور دادن به پشت زمینه */
+    -webkit-backdrop-filter: blur(10px); /* بلور برای مرورگرهای وب‌کیت */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* یک خط سفید نازک با شفافیت */
+    padding: 20px; /* فاصله داخلی */
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    color: #fff; /* رنگ متن سفید */
+}
+
+.card-header{
+    text-align: center;
+}
+
+.about-button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.about-button>button:hover{
+    background-color: #5e617a;
+    color: white;
+}
+
+.about-button > button{
+    /* z-index: 200; */
+    position: relative;
+    color: black;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+/* Services Section */
+
+.text-3xl{
+    font-size: 25px;
+}
+
+.ServicesSection{
+    width: 100%;
+    height: auto;
+}
+
+.p-set{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* PARALLAX STYLE */
+
+.parallax{
+    width: 100%;
+}
+
+.parallax-container {
+    background-image: url('../../images/pictures/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: auto;
+    overflow: hidden;
+}
+
+
+/* Style the parallax content */
+[lang=fa-IR] .parallax-content {
+    text-align: center;
+    padding:15% 35% 15% 5%;
+    color: #fff;
+}
+
+[lang=en] .parallax-content {
+    text-align: center;
+    padding:15% 5% 15% 35%;
+    color: #fff;
+}
+
+.parallax-content > p{
+    width: 50%;
+    height: 4rem;
+    padding-top: 1.6%;
+    background-color: #ffffff78;
+    color: #4b2f2fa6;
+    backdrop-filter: blur(15px);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+/* contact style */
+
+.icon-transform{
+    transform: scale(2.5);
+    margin-bottom: 5%;
+}
+
+.in-contact{
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+.in-touch{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.in-touch > div{
+    width: 33.33%;
+}
+
+.divider {
+    border: none;
+    border-left: 3px solid #9a4a28;
+    height: 135px;
+    margin: 0 20px;
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 329px) and (max-width: 767px){
+    .parallax-hero {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 1) 100%), url(../../images/pictures/1.jpg);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-size: 50rem 100%;
+        background-repeat: no-repeat;
+    }
+
+    .hero-title {
+        font-size: 25px;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .hero-p {
+        color: #ffffffdb;
+        font-size: 18px;
+        width: 100%;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .about-section {
+        padding-top: 5rem;
+        position: relative;
+        width: 100%;
+        background-size: 230rem 100%;
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 1) 100%), url(../../images/pictures/گواهی.jpg);
+        background-repeat: no-repeat;
+    }
+
+    div.container {
+        width: 100%;
+        /* z-index: 100; */
+        position: inherit;
+    }
+
+    [lang=fa-IR] .parallax-content {
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 5rem 0rem 5rem 0rem;
+    }
+    
+    [lang=en] .parallax-content {
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 15% 2% 15% 2%;
+    }
+
+    .parallax-content > p {
+        width: 80%;
+        height: 4rem;
+        padding-top: 3%;
+        background-color: #ffffff78;
+        color: #4b2f2fa6;
+        backdrop-filter: blur(15px);
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .in-touch > div {
+        width: 100%;
+    }
+
+    .in-touch {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+}
